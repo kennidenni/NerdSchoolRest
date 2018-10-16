@@ -1,15 +1,20 @@
 const express = require('express');
-const app = express();
-
-const morgan = require('morgan');
-app.use(morgan('dev'));
-
 const bodyParser = require('body-parser');
+const morgan = require('morgan');
+const tvShowRouter =  require('./tvShow/tvShowRouter');
+
+const app = express();
+const port = 3000;
+
+app.use(morgan('dev'));
 app.use(bodyParser.json());
 
+// Exercise #2
+app.use('/tvshow', tvShowRouter);
+
+// Exercise #1
 app.get('/', (request, response) => response.send('Hello World'));
 
-const port = 3000;
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`); // Note the `` backticks is NOT the same as single quotes ''
+  console.log(`Example app listening on port ${port}`);
 });
