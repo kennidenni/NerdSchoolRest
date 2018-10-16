@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kennidenni/NerdSchoolRest#readme",
   "dependencies": {
+    "express": "^4.16.4",
     "npm": "^6.4.1"
   }
 }
