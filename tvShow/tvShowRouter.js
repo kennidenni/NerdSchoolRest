@@ -15,4 +15,12 @@ tvShowRouter.route('/:tvShowId').get((req, res) => {
     res.json(tvShow);
 });
 
+tvShowRouter.post('/', (req, res) => {
+    const name = req.body.name
+    const genre = req.body.genre
+    const newTvShow = tvShowService.createTvShow(name, genre)
+    console.log(newTvShow);
+    res.send(newTvShow);
+});
+
 module.exports = tvShowRouter;
