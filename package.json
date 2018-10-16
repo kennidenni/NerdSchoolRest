@@ -1,0 +1,22 @@
+{
+  "name": "modern-javascript-and-rest",
+  "version": "1.0.0",
+  "description": "NerdSchool project",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennidenni/NerdSchoolRest.git"
+  },
+  "author": "Kenneth Apeland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kennidenni/NerdSchoolRest/issues"
+  },
+  "homepage": "https://github.com/kennidenni/NerdSchoolRest#readme",
+  "dependencies": {
+    "npm": "^6.4.1"
+  }
+}
